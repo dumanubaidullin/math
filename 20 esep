@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    int a,b,c;
+    cout<<"A = ";
+    cin>>a;
+    cout<<"B = ";
+    cin>>b;
+    cout<<"C = ";
+    cin>>c;
+		if((a %= 2)== 0){
+			cout<<"A саны жұп сан"<<endl;
+		}
+		else cout<<"A саны тақ сан"<<endl;
+		if((b %= 2)== 0){
+			cout<<"B саны жұп сан"<<endl;
+		}
+		else cout<<"B саны тақ сан"<<endl;
+		if((c %= 2)== 0){
+			cout<<"C саны жұп сан"<<endl;
+		}
+		else cout<<"C саны тақ сан"<<endl;
+			
+	}		
