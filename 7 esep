@@ -1,0 +1,22 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    float x,y,z;
+    cout<<"x = ";
+    cin>>x;
+	
+		if(abs(x) < 10){
+			y = sqrt(3*pow(x,2)+8);
+				cout<<y;
+		}
+		else if (abs(x) >= 10){
+			y = log(abs(x-0.5));
+			cout<<y;
+		}
+		else cout<<"null";
+	
+}
