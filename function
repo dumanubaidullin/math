@@ -37,9 +37,8 @@ void function2(float t, float s) {
 void function3(float y) {
 	float result111, result222;
 	float t1, t2;
-	float res1 = 0;
-	float res2 = 0;
-	float t1r, t2r, t3r,res3;
+	float res1 =0,  res2=0, res3=0, res4=0, res5=0, res6 = 0;
+	float t1r, t2r, t3r;
 	float t3 = 0;
 	t1 = 0.25;
 	t2 = 1 + y;
@@ -48,8 +47,33 @@ void function3(float y) {
 		res1 =res1 + (pow(t1, 2 * k + 1) / (2 * k + 1));
 		res2 =res2 + (pow(t1, 2 * k) / 2 * k);
 	}
-	
-	
+	for (int k = 0; k <= 10; k++) {
+		res3 = res3 + (pow(t2, 2 * k + 1) / (2 * k + 1));
+		res4 = res4 + (pow(t2, 2 * k) / 2 * k);
+	}
+	t1r = res1 / res2;
+	t2r = res3 / res4;
+
+		
+}
+void function4(float a, float b, float c) {
+	float p1 = a + b;
+	float p2 = b + c;
+	float p3 = a + (b * c);
+	float max1, max2, max3, res;
+	if (a >= p1)
+		max1 = a;
+	else max1 = p1;
+	if (a >= p2)
+		max2 = a;
+	else max2 = p2;
+	if (p3 >= 1.15)
+		max3 = p3;
+	else max3 = 1.15;
+	res = (max1 + max2) / (1 + max3);
+	cout << "Жауабы   " << res << endl;
+
+
 
 
 }
@@ -57,16 +81,20 @@ void function3(float y) {
 
 
 
-
 void main() {
 	setlocale(LC_ALL, "RUSSIAN");
-	float t, s ,y;
-	cout << "t санын жазыныз: ";
+	float t, s ,y,a,b,c;
+	/*cout << "t санын жазыныз: ";
 	cin >> t;
 	cout << "s санын жазыныз: ";
 	cin >> s;
 	cout << "y санын жазыныз: ";
-	cin >> y;
-	function3(y);
+	cin >> y;*/
+	cout << "a санын жазыныз: ";
+	cin >> a;
+	cout << "b санын жазыныз: ";
+	cin >> b;
+	cout << "c санын жазыныз: ";
+	cin >> c;
+	function4(a,b,c);
 	}
-
