@@ -1,1 +1,72 @@
+#include <iostream>
+#include <clocale>
+#include <cmath>
+
+using namespace std;
+void function1(float t, float s) {
+	float result, result1;
+	float a = t;
+	int b = s * (-2);
+	int c = 1.17;
+	float  a1 = 2.2;
+	float b1 = t;
+	float c1 = s - t;
+	result = ((2 * a) - b - (sin(c))) / (5 + abs(c));
+	result1  = ((2 * a1) - b1 - (sin(c1))) / (5 + abs(c1));
+	cout << "1 функция  " << result << "  тен" << endl;
+	cout << "2 функция  " << result1 << "  тен" << endl;
+	cout << "2 функциянын косындысы  " << result + result1 << "  тен" << endl;
+
+}
+void function2(float t, float s) {
+	float result11, result22, result33;
+	float a1 = 1.2;
+	float b1 = s;
+	float a2 = t;
+	float b2 = s;
+	float a3 = (2*s)-1;
+	float b3 = s*t;
+	result11 = pow(a1, 2) + pow(b1, 2) / pow(a1, 2) + (2 * a1 * b1) + (3 * pow(b1, 2)) + 4;
+	result22 = pow(a2, 2) + pow(b2, 2) / pow(a2, 2) + (2 * a2 * b2) + (3 * pow(b2, 2)) + 4;
+	result33 = pow(a3, 2) + pow(b3, 2) / pow(a3, 2) + (2 * a3 * b3) + (3 * pow(b3, 2)) + 4;
+	cout << "1 функция  " << result11 << "  тен" << endl;
+	cout << "2 функция  " << result22 << "  тен" << endl;
+	cout << "3 функция  " << result33 << "  тен" << endl;
+	cout << "Жауабы  " << result11 + result22 - result33  << "  тен" << endl;
+}
+void function3(float y) {
+	float result111, result222;
+	float t1, t2;
+	float res1 = 0;
+	float res2 = 0;
+	float t1r, t2r, t3r,res3;
+	float t3 = 0;
+	t1 = 0.25;
+	t2 = 1 + y;
+	t3 = pow(y, 2) - t3;
+	for (int k = 0; k <= 10; k++) {
+		res1 =res1 + (pow(t1, 2 * k + 1) / (2 * k + 1));
+		res2 =res2 + (pow(t1, 2 * k) / 2 * k);
+	}
+	
+	
+
+
+}
+
+
+
+
+
+void main() {
+	setlocale(LC_ALL, "RUSSIAN");
+	float t, s ,y;
+	cout << "t санын жазыныз: ";
+	cin >> t;
+	cout << "s санын жазыныз: ";
+	cin >> s;
+	cout << "y санын жазыныз: ";
+	cin >> y;
+	function3(y);
+	}
 
